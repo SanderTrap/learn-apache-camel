@@ -1,24 +1,24 @@
 *.class
 
-          # Mobile Tools for Java (J2ME)
-          .mtj.tmp/
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
 
-          # Package Files #
-          *.jar
-          *.war
-          *.ear
+# Package Files #
+*.jar
+*.war
+*.ear
 
-          #Gradle temporary files
-          target/
+#Gradle temporary files
+target/
 
-          #Eclipse files
-          **/.project
-          **/.classpath
-          **/.settings/
-          blog/bin/
-          **/.tern-project
+#Eclipse files
+**/.project
+**/.classpath
+**/.settings/
+blog/bin/
+**/.tern-project
 
-          #IntelliJ files
-          **/*.iml
-          **/.idea
-          **/.gradle
+#IntelliJ files
+**/*.iml
+**/.idea
+**/.gradle
