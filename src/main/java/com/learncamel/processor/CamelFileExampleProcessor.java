@@ -1,4 +1,4 @@
-package com.learncamel.process;
+package com.learncamel.processor;
 
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;

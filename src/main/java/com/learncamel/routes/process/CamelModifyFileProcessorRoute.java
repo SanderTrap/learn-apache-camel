@@ -1,6 +1,6 @@
-package com.learncamel.routes;
+package com.learncamel.routes.process;
 
-import com.learncamel.process.CamelFileExampleProcessor;
+import com.learncamel.processor.CamelFileExampleProcessor;
 import org.apache.camel.builder.RouteBuilder;
 
 public class CamelModifyFileProcessorRoute extends RouteBuilder {
