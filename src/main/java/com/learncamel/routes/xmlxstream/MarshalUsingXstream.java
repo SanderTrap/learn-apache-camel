@@ -1,4 +1,4 @@
-package com.learncamel.xmlxstream;
+package com.learncamel.routes.xmlxstream;
 
 import com.learncamel.domain.Employee;
 import com.learncamel.processor.CustomProcessorXstream;

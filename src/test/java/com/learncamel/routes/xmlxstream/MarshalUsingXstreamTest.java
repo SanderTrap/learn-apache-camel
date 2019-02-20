@@ -1,4 +1,4 @@
-package com.learncamel.xmlxstream;
+package com.learncamel.routes.xmlxstream;
 
 import org.apache.camel.RoutesBuilder;
 import org.apache.camel.component.mock.MockEndpoint;
