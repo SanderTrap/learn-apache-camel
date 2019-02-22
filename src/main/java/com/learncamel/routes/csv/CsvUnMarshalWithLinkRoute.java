@@ -5,7 +5,7 @@ import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.dataformat.bindy.csv.BindyCsvDataFormat;
 import org.apache.camel.spi.DataFormat;
 
-public class CsvUnmarshalWithLinkRoute extends RouteBuilder {
+public class CsvUnMarshalWithLinkRoute extends RouteBuilder {
 
     public void configure() throws Exception {
         DataFormat bindy = new BindyCsvDataFormat(EmployeeWithAddress.class);
