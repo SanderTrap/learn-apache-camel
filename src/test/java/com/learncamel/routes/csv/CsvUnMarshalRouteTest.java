@@ -8,11 +8,11 @@ import org.junit.Test;
 
 import java.util.List;
 
-public class CSVUnMarshalRouteTest extends CamelTestSupport {
+public class CsvUnMarshalRouteTest extends CamelTestSupport {
 
     @Override
     protected RoutesBuilder createRouteBuilder() throws Exception {
-        return new CSVUnMarshalRoute();
+        return new CsvUnMarshalRoute();
     }
 
     @Test

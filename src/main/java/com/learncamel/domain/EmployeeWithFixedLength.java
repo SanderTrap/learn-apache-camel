@@ -3,6 +3,7 @@ package com.learncamel.domain;
 import org.apache.camel.dataformat.bindy.annotation.DataField;
 import org.apache.camel.dataformat.bindy.annotation.FixedLengthRecord;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 
 @FixedLengthRecord(ignoreTrailingChars = true)
@@ -23,16 +24,8 @@ public class EmployeeWithFixedLength {
     @DataField(pos = 5, delimiter = "^")
     private String gender;
 
-    @Override
-    public String toString() {
-        return "EmployeeWithFixedLength{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", role='" + role + '\'' +
-                ", joiningDate=" + joiningDate +
-                ", gender='" + gender + '\'' +
-                '}';
-    }
+    @DataField(pos = 6, length = 6, precision = 2)
+    private BigDecimal salary;
 
     public int getId() {
         return id;
@@ -72,5 +65,25 @@ public class EmployeeWithFixedLength {
 
     public void setGender(String gender) {
         this.gender = gender;
+    }
+
+    @Override
+    public String toString() {
+        return "EmployeeWithFixedLength{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", role='" + role + '\'' +
+                ", joiningDate=" + joiningDate +
+                ", gender='" + gender + '\'' +
+                ", salary=" + salary +
+                '}';
+    }
+
+    public BigDecimal getSalary() {
+        return salary;
+    }
+
+    public void setSalary(BigDecimal salary) {
+        this.salary = salary;
     }
 }
