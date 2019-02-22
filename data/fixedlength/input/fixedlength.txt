@@ -1,2 +1,2 @@
-123Sander    Engineer
-345Zhen      Data Engineer
+123Sander    Engineer       19Oct1990Male^
+345Zhen      Data Engineer  01Aug1991Female^

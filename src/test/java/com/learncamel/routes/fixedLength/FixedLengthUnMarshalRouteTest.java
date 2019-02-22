@@ -6,6 +6,7 @@ import org.apache.camel.RoutesBuilder;
 import org.apache.camel.test.junit4.CamelTestSupport;
 import org.junit.Test;
 
+import java.time.LocalDate;
 import java.util.List;
 
 public class FixedLengthUnMarshalRouteTest extends CamelTestSupport {
@@ -23,6 +24,11 @@ public class FixedLengthUnMarshalRouteTest extends CamelTestSupport {
 
         assertNotNull(employeeWithFixedLengthList);
         assertEquals("Sander", employeeWithFixedLengthList.get(0).getName());
+        assertEquals(LocalDate.of(1990, 10, 19), employeeWithFixedLengthList.get(0).getJoiningDate());
+        assertEquals("Male", employeeWithFixedLengthList.get(0).getGender());
+
         assertEquals("Zhen", employeeWithFixedLengthList.get(1).getName());
+        assertEquals(LocalDate.of(1991, 8, 1), employeeWithFixedLengthList.get(1).getJoiningDate());
+        assertEquals("Female", employeeWithFixedLengthList.get(1).getGender());
     }
 }
