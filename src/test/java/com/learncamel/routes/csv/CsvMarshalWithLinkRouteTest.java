@@ -2,14 +2,11 @@ package com.learncamel.routes.csv;
 
 import com.learncamel.domain.Address;
 import com.learncamel.domain.EmployeeWithAddress;
-import org.apache.camel.Exchange;
 import org.apache.camel.RoutesBuilder;
 import org.apache.camel.test.junit4.CamelTestSupport;
 import org.junit.Test;
 
 import java.io.File;
-
-import static org.junit.Assert.*;
 
 public class CsvMarshalWithLinkRouteTest extends CamelTestSupport {
 
