@@ -1,5 +1,6 @@
-package com.learncamel.routes.defaulterrorhandler;
+package com.learncamel.routes;
 
+import com.learncamel.routes.defaulterrorhandler.DefaultErrorHandlerRoute;
 import org.apache.camel.RoutesBuilder;
 import org.apache.camel.test.junit4.CamelTestSupport;
 import org.junit.Test;

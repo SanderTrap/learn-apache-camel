@@ -20,10 +20,15 @@ public class DataModifier {
         return newBody;
     }
 
-    public String mapOnException(String input) throws Exception {
+    public String mapOnException(String input) throws ArrayIndexOutOfBoundsException, RuntimeException, Exception {
         String newBody = null;
+        char charBody;
         try {
             newBody = input.replace(",", "*");
+            charBody = newBody.toCharArray()[10];
+        } catch (ArrayIndexOutOfBoundsException e) {
+            log.severe("ArrayIndexOutOfBoundsException: " + e);
+            throw e;
         } catch (RuntimeException e) {
             log.severe("RuntimeException: " + e);
             throw e;
@@ -32,6 +37,6 @@ public class DataModifier {
             log.severe("Exception: " + e);
             throw e;
         }
-        return newBody;
+        return Character.toString(charBody);
     }
 }
