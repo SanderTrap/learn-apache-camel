@@ -1,6 +1,5 @@
 package com.learncamel.routes;
 
-import org.apache.camel.CamelExecutionException;
 import org.apache.camel.RoutesBuilder;
 import org.apache.camel.test.junit4.CamelTestSupport;
 import org.junit.Test;
@@ -12,7 +11,7 @@ public class OnExceptionHandlerRouteTest extends CamelTestSupport {
         return new OnExceptionHandlerRoute();
     }
 
-    @Test(expected = CamelExecutionException.class)
+    @Test
     public void onExceptionCheck() {
         String request = "short";
         final String response = template.requestBody("direct:exception", request, String.class);
