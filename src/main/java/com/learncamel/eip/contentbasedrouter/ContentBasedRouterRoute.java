@@ -2,7 +2,7 @@ package com.learncamel.eip.contentbasedrouter;
 
 import org.apache.camel.builder.RouteBuilder;
 
-public class ContentBasedRouerRoute extends RouteBuilder {
+public class ContentBasedRouterRoute extends RouteBuilder {
 
     private static final String HEADER_NAME = "CamelFileNameConsumed";
 

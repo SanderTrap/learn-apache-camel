@@ -6,11 +6,11 @@ import org.junit.Test;
 
 import java.io.File;
 
-public class ContentBasedRouerRouteTest extends CamelTestSupport {
+public class ContentBasedRouterRouteTest extends CamelTestSupport {
 
     @Override
     protected RoutesBuilder createRouteBuilder() throws Exception {
-        return new ContentBasedRouerRoute();
+        return new ContentBasedRouterRoute();
     }
 
     @Test
