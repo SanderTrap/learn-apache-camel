@@ -28,5 +28,8 @@ public class ContentBasedRouerRouteTest extends CamelTestSupport {
 
         File file3 = new File("output/other");
         assertTrue(file3.isDirectory());
+
+        File filelAll = new File("output/all");
+        assertTrue(filelAll.isDirectory());
     }
 }

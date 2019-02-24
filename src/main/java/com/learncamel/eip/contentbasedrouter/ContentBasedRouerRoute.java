@@ -17,6 +17,8 @@ public class ContentBasedRouerRoute extends RouteBuilder {
                     .when(header(HEADER_NAME).endsWith(".json"))
                         .to("file:output/json")
                     .otherwise()
-                        .to("file:output/other");
+                        .to("file:output/other").stop()
+                .end()
+                .to("file:output/all");
     }
 }
