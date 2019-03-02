@@ -3,6 +3,7 @@
 This repository contains a bunch of projects related to learning Apache Camel. All of the projects can be build with Maven.
 
 ## Projects
+ - [learn-camel-activemq2db](https://github.com/SanderTrap/learn-apache-camel/tree/master/learn-camel-activemq2db "learn-camel-activemq2db") contains examples of connecting Apache Camel with an ActiveMQ queue and PostgreSQL database.
  - [simple-camel-route](https://github.com/SanderTrap/learn-apache-camel/tree/master/simple-camel-route "simple-camel-route") contains examples of simple routes that can be made with Apache Camel.
  - [learn-camel-transform](https://github.com/SanderTrap/learn-apache-camel/tree/master/learn-camel-transform "learn-camel-transform") contains examples of how to marshal and unmarshal different kind of file types with Apache Camel.
  - [learn-camel-transform-bindy](https://github.com/SanderTrap/learn-apache-camel/tree/master/learn-camel-transform-bindy "learn-camel-transform-bindy") contains examples of how to marshal and unmarshal CSV files with Bindy and Apache Camel.
