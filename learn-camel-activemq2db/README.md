@@ -12,3 +12,5 @@ CREATE TABLE messages (
     create_date timestamp without time zone DEFAULT now()
 );
 ```
+
+To run as a standalone app: `mvn install -DskipTests` followed by `java -jar target/learn-camel-activemq2db-1.0-SNAPSHOT.jar`.
