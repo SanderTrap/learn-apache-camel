@@ -1,4 +1,4 @@
-package com.learncamel.routes.jdbc;
+package com.learncamel.route.jdbc;
 
 import org.apache.camel.CamelContext;
 import org.apache.camel.RoutesBuilder;

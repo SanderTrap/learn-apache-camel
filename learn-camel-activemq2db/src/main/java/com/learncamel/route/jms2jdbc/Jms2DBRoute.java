@@ -1,7 +1,7 @@
-package com.learncamel.routes.jms2jdbc;
+package com.learncamel.route.jms2jdbc;
 
-import com.learncamel.routes.exception.ExceptionProcessor;
-import com.learncamel.routes.jdbc.InsertProcessor;
+import com.learncamel.route.exception.ExceptionProcessor;
+import com.learncamel.route.jdbc.InsertProcessor;
 import org.apache.camel.builder.RouteBuilder;
 import org.postgresql.util.PSQLException;
 
@@ -16,7 +16,7 @@ public class Jms2DBRoute extends RouteBuilder {
                 .process(new InsertProcessor())
                 .to("jdbc:myDataSource")
                 .to("sql:select * from messages?dataSource=#myDataSource")
-                .to("log:?level=INFO&showBody=true")
-                .to("direct:output");
+                .to("log:?level=INFO&showBody=true");
+//                .to("direct:output");
     }
 }

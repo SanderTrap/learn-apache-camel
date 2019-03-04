@@ -1,4 +1,4 @@
-package com.learncamel.routes.jms;
+package com.learncamel.route.jms;
 
 import org.apache.camel.builder.RouteBuilder;
 

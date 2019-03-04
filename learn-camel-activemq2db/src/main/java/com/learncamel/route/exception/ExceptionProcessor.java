@@ -1,4 +1,4 @@
-package com.learncamel.routes.exception;
+package com.learncamel.route.exception;
 
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;
