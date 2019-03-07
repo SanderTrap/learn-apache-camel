@@ -30,6 +30,13 @@ public class Rest2DBRouteTest extends CamelTestSupport {
     }
 
     @Test
+    public void rest2DBRouteExceptionTest() {
+        ArrayList responseList = consumer.receiveBody("timer:learnTimer", ArrayList.class);
+
+        assertNull(responseList);
+    }
+
+    @Test
     public void rest2DBRouteTest() {
         ArrayList responseList = consumer.receiveBody("direct:dbOutput", ArrayList.class);
         System.out.println("responseList: " + responseList.size());
