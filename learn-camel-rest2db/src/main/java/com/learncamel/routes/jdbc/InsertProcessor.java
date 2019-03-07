@@ -1,6 +1,5 @@
-package com.learncamel.jdbc;
+package com.learncamel.routes.jdbc;
 
-import com.google.gson.JsonObject;
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;
 import org.json.simple.JSONObject;
